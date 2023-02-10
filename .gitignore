@@ -1,0 +1,14 @@
+/node_modules
+/.env.local
+/.umirc.local.js
+/config/config.local.js
+/src/.umi
+/src/.umi-production
+/.umi
+/.umi-production
+/.umi-test
+/dist
+/.mfsu
+package-lock.json
+/tempFile/temp
+/tempFile/thirdly

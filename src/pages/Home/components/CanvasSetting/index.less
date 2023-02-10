@@ -1,0 +1,55 @@
+@import "../../../../styles/variable.less";
+
+.modal-wrap {
+  height: 550px;
+  display: flex;
+  .left {
+    width: 600px;
+    border-right: 1px solid #ccc;
+    .left-top {
+      margin-bottom: 10px;
+    }
+    .left-bottom {
+      position: relative;
+      .canvasBg1 {
+        width: calc(100% - 40px);
+        height: calc(100% - 7px);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+      .canvasPerson1 {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+  .right {
+    padding: 20px;
+    padding-top: 0;
+    flex: 1;
+  }
+  .card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    .card-item {
+      width: 90px;
+      height: 65px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      display: flex;
+      cursor: pointer;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.ant-modal-body {
+  padding: 0;
+}

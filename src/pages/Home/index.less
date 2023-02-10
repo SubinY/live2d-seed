@@ -1,0 +1,116 @@
+@import "../../styles/variable.less";
+
+.home {
+  max-width: 1400px;
+  margin: 0 auto;
+  .header {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    > div {
+      flex: 1;
+    }
+    .title {
+      font-size: 16px;
+    }
+    .btn-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .wrap {
+    display: flex;
+    height: calc(100vh - @height-header - @spacing-layout * 2 - 70px - 15px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    .left {
+      position: relative;
+      width: 550px;
+      border-right: 1px solid #ccc;
+      .left-top {
+        padding: 20px;
+        .left-top-btn {
+          display: flex;
+          justify-content: flex-end;
+          .slider-wrap,
+          .switch-wrap {
+            width: 200px;
+            display: flex;
+            margin-right: 10px;
+            > span {
+              padding-top: 5px;
+            }
+          }
+          .slider-bar {
+            flex: 1;
+          }
+        }
+      }
+      .left-bottom {
+        position: relative;
+        padding: 0 20px;
+        .canvasBg {
+          width: calc(100% - 40px);
+          height: calc(100% - 7px);
+          position: absolute;
+          top: 0;
+          left: 20px;
+          z-index: 1;
+        }
+        .canvasPersonWrap {
+          width: 100%;
+          overflow: hidden;
+        }
+        .canvasPerson {
+          height: 400px;
+          position: relative;
+          z-index: 10;
+        }
+        .caption {
+          position: absolute;
+          bottom: 20px;
+          width: calc(100% - 40px);
+          color: #fff;
+          z-index: 100;
+          text-align: center;
+          font-size: 16px;
+          background: rgba(0, 0, 0, 0.2);
+          height: 35px;
+          line-height: 35px;
+        }
+      }
+      .left-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        border-top: 1px solid #ccc;
+        .ant-switch {
+          vertical-align: text-top;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      .right-top {
+        padding: 20px;
+        background-color: #fafafa;
+        .right-top-btn {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      .right-bottom {
+        height: calc(100% - 80px);
+        textarea {
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+  }
+}
